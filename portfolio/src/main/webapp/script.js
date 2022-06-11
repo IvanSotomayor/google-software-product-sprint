@@ -35,3 +35,12 @@ async function showServerDateTime() {
     const dateContainer = document.getElementById('dateTime-container');
     dateContainer.innerText = textFromResponse;
 }
+
+async function showRandomFacts() {
+    const responseFromServer = await fetch('/random');
+    const textFromResponse = await responseFromServer.text();
+
+    const factsContainer = document.getElementById('facts-container');
+    factsContainer.innerText = textFromResponse;
+}
+
