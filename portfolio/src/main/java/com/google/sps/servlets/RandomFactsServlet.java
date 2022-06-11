@@ -4,22 +4,19 @@ import java.io.IOException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
-import com.google.gson.Gson;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
+import com.google.gson.Gson;
 
 @WebServlet("/random")
 public class RandomFactsServlet extends HttpServlet {
-    ArrayList<String> facts = new ArrayList<String>();
-
+    String[] facts = {"Fact1", "Fact2", "Fact3", "Fact4"};
+    
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        facts.add("Fact1");
-        facts.add("Fact2");
-        facts.add("Fact3");
-        facts.add("Fact4");
-        String factsJson = new Gson().toJson(facts);
-        response.getWriter().println("Facts: " + factsJson);
+        response.setContentType("text/html;");
+        Gson gson = new Gson();
+        String factsJson = gson.toJson(facts);
+        response.getWriter().println(factsJson);
     }
 }
 
