@@ -35,15 +35,12 @@ public class FormHandlerServlet extends HttpServlet {
             .build();
     datastore.put(formEntity);
 
-    response.sendRedirect("/index.html");
-
-    // Print the value so you can see it in the server logs.
     System.out.println("Name: " + nameValue);
     System.out.println("Email: " + emailValue);
     System.out.println("Message: " + messageValue);
 
-    // Write the value to the response so the user can see it.
-    response.getWriter().println("<h1> Thank you, I'll be in touch with you ASAP :) <h1>");
+    response.sendRedirect("/thanks.html");
+
   }
 }
 

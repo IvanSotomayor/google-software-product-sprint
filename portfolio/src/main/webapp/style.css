@@ -1,9 +1,17 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+.nav-item{
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-#greeting-container {
-  margin-top: 20px;
+.navbar-collapse{
+    padding-left: 50px;
 }
+
+.navbar-brand{
+    padding-left: 50px;
+}
+
+.carousel-item{
+    height: 90vh;
+}
+

@@ -5,13 +5,97 @@
     <title>IvanORSO portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio - Ivan Ortega Sotomayor</h1>
-      <p>Hello visitor, in this webpage I will show up my experience and projects and tell you a little more about myself</p>
-      <p>I currently based in Guadalajara Mexico, this is the place I was born</p>
-      <p>I am majoring in Computer Science @ Tec de Monterrey</p>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">IvánORSO portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/education.html">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/projects.html">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <a href="https://github.com/IvanSotomayor/CovidCheckPoint">
+                    <img src="/img/covidCheckpoint.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>COVID checkpoint</h5>
+                        <p>A console based game where you can learn about COVID-19 meassures</p>
+                    </div>
+                  </a>
+                </div>
+               
+                
+                <div class="carousel-item">
+                  <a href="https://github.com/IvanSotomayor/syntaxHighlighters">
+                    <img src="/img/syntaxHighlighters.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Syntax highlighters</h5>
+                        <p>Some syntax highlighters I've done using automatons and functional and parallel programming</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="https://github.com/IvanSotomayor/digiskyApp">
+                    <img src="/img/digiSkyApp.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>DigiSky App</h5>
+                        <p>iOS application made in collaboration with AgroSky company for cultivation managment</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="https://buildyourfuture.withgoogle.com/programs/softwareproductsprint">
+                    <img src="/img/googlesps.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Google SPS 2022 team project</h5>
+                        <p>comming soon :)</p>
+                    </div>
+                  </a>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+
       <p>Click here to get a random Malcom in the middle quote</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
@@ -29,13 +113,15 @@
       <p id="facts-container"></p>
 
       <form action="/form-handler" method="POST">
-        <p>CONTACT ME!</p>
-        <textarea name="name-input">Your name</textarea>
-        <textarea name="email-input">Your email</textarea>
-        <textarea name="message-input">Your message</textarea>
+        <h2>Want to get in touch?</h2>
+        <textarea name="name-input" placeholder="Your name"></textarea>
+        <textarea name="email-input" placeholder="Your e-mail"></textarea>
+        <textarea name="message-input" placeholder="Message"></textarea>
         <br/>
         <input type="submit" />
       </form>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     </div>
   </body>
