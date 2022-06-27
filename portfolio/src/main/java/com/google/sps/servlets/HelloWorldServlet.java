@@ -10,9 +10,13 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/hello")
 public class HelloWorldServlet extends HttpServlet {
 
+  private int pageViews = 0;
+
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    pageViews++;
     response.setContentType("text/html;");
-    response.getWriter().println("<h1>Hello world!</h1>");
+    response.getWriter().println("<h1>Hello Visitor</h1>");
+    response.getWriter().println("<p>This page has been viewed " + pageViews + " times.</p>");
   }
 }

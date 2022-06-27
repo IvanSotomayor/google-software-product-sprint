@@ -26,3 +26,21 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+// Get date and time
+async function showServerDateTime() {
+    const responseFromServer = await fetch('/dateTime');
+    const textFromResponse = await responseFromServer.text();
+
+    const dateContainer = document.getElementById('dateTime-container');
+    dateContainer.innerText = textFromResponse;
+}
+
+async function showRandomFacts() {
+    const responseFromServer = await fetch('/random');
+    const textFromResponse = await responseFromServer.text();
+
+    const factsContainer = document.getElementById('facts-container');
+    factsContainer.innerText = textFromResponse;
+}
+
