@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>IvanORSO portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  </head>
-  <body>
-    <div id="content">
+    <title>IvanORSO portfolio</title>
+</head>
+<body>
 
+    <div name= "home">
+        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">IvánORSO portfolio</a>
@@ -19,7 +22,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/education.html">Education</a>
@@ -41,14 +44,15 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
                   <a href="https://github.com/IvanSotomayor/CovidCheckPoint">
-                    <img src="/img/covidCheckpoint.png" class="d-block w-100" alt="...">
+                    <img src="/img/covid.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>COVID checkpoint</h5>
+                        <h2>COVID checkpoint</h2>
                         <p>A console based game where you can learn about COVID-19 meassures</p>
                     </div>
                   </a>
@@ -57,9 +61,9 @@
                 
                 <div class="carousel-item">
                   <a href="https://github.com/IvanSotomayor/syntaxHighlighters">
-                    <img src="/img/syntaxHighlighters.png" class="d-block w-100" alt="...">
+                    <img src="/img/syntax.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Syntax highlighters</h5>
+                        <h2>Syntax highlighters</h2>
                         <p>Some syntax highlighters I've done using automatons and functional and parallel programming</p>
                     </div>
                   </a>
@@ -69,8 +73,19 @@
                   <a href="https://github.com/IvanSotomayor/digiskyApp">
                     <img src="/img/digiSkyApp.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>DigiSky App</h5>
+                        <h2>DigiSky App</h2>
                         <p>iOS application made in collaboration with AgroSky company for cultivation managment</p>
+                    </div>
+                  </a>
+                </div>
+
+
+                <div class="carousel-item">
+                  <a href="https://github.com/IvanSotomayor/digiskyApp">
+                    <img src="/img/botnet.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Botnet data analyzer</h2>
+                        <p>Console based program to detect bot users in a server</p>
                     </div>
                   </a>
                 </div>
@@ -79,8 +94,8 @@
                   <a href="https://buildyourfuture.withgoogle.com/programs/softwareproductsprint">
                     <img src="/img/googlesps.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Google SPS 2022 team project</h5>
-                        <p>comming soon :)</p>
+                        <h2>Google SPS 2022 team project</h2>
+                        <p>coming soon :)</p>
                     </div>
                   </a>
                 </div>
@@ -96,33 +111,51 @@
             </button>
             </div>
 
-      <p>Click here to get a random Malcom in the middle quote</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+             <div class="about-me" >
+              <div class="top-about">
+                <div class="info">
+                  <img src="/img/yo.jpg" alt="" class="profile-img">
+                  <div class="text-insider">
+                    <p>ABOUT ME</p>
+                    <h1 id="nameTitle">Iván Ortega Sotomayor</h1>
+                    <div class="icons-contact">
+                      <ul class="nav justify-content-center">
+                        <li class="nav-item iconc">
+                          <a class="nav-link active" aria-current="page" href="#">
+                            <img class="icon-img" src="img/github.png" alt="">
+                          </a>
+                        </li>
+                        <li class="nav-item iconc">
+                          <a class="nav-link" href="#">
+                            <img class="icon-img" src="img/LinkedIn_icon_circle.svg.png" alt="">
+                          </a>
+                        </li>
+                        <li class="nav-item iconc">
+                          <a class="nav-link" href="#">
+                            <img class="icon-img" src="img/gmail.png" alt="">
+                          </a>
+                        </li>
+                        <li class="nav-item iconc">
+                          <a class="nav-link" href="#">
+                            <img class="icon-img" src="img/twitter-icon-circle-blue-logo-0902F48837-seeklogo.com.png" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <p>Click <a href="/hello">here</a> to see how many times this page has been visited</p>
-      <button onclick="showServerDateTime();">
-        Get server date and time
-      </button>
-      <p id="dateTime-container"></p>
-
-      <p>Ger random facts about me</p>
-      <button onclick="showRandomFacts();">
-        Get that fact
-      </button>
-      <p id="facts-container"></p>
-
-      <form action="/form-handler" method="POST">
-        <h2>Want to get in touch?</h2>
-        <textarea name="name-input" placeholder="Your name"></textarea>
-        <textarea name="email-input" placeholder="Your e-mail"></textarea>
-        <textarea name="message-input" placeholder="Message"></textarea>
-        <br/>
-        <input type="submit" />
-      </form>
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+              <div class="description">
+                <p id="text-description">
+                  I am a Junior computer science student from Guadalajara México, I enjoy to create and be part of creative
+                  and innovative solutions related to the technology field, I also like to 
+                  learn from other people ideas while we are working together.
+                </p>
+              </div>
+             </div>
     </div>
-  </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>

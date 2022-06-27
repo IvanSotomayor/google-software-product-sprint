@@ -1,3 +1,6 @@
+.home{
+    display: flex;
+}
 .nav-item{
     padding-left: 5px;
     padding-right: 5px;
@@ -15,3 +18,56 @@
     height: 90vh;
 }
 
+.about-me{
+    position: relative;
+}
+
+.top-about{
+    background:linear-gradient( rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.8)100%),url("img/86882914.jpeg");
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.info{
+    padding-left: 100px;
+}
+
+.profile-img{
+    position: absolute;
+    border-radius: 50%;
+    height: 70%;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+.text-insider{
+    padding-top: 200px;
+    padding-left: 400px;
+    color: white;
+}
+
+#nameTitle{
+    font-size: 70px; 
+}
+
+#iconNav{
+    width: 2%;
+    height: 2%;
+}
+
+.icon-img{
+    height: 30px;
+}
+
+#text-description{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.description{
+    background-color: black;
+    color: white;
+}
